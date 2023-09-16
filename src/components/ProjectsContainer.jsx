@@ -14,7 +14,7 @@ const ProjectsContainer = ({ projects, activeCategory }) => {
   return (
     <div className="flex justify-center">
       <div
-        className={`w-2/3 bg-neutral rounded-lg grid lg:grid-cols-2 xl:grid-cols-3
+        className={`w-4/5 sm:w-2/3 bg-neutral rounded-lg grid lg:grid-cols-2 xl:grid-cols-3
        md:grid-cols-1 gap-2 mt-16 justify-items-center  `}>
         {activeProjects.map((project) => {
           return <ProjectCard key={project.id} project={project} />
