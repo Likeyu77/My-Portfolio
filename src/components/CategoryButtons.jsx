@@ -7,7 +7,7 @@ const CategoryButtons = ({ categories, activeCategory, setActiveCategory }) => {
         return (
           <button
             key={index}
-            className={`btn btn-outline mx-4 ${
+            className={`btn btn-outline mx-2 sm:mx-4 ${
               activeCategory === category ? 'btn-primary' : 'btn-secondary'
             }`}
             onClick={() => setActiveCategory(category)}>

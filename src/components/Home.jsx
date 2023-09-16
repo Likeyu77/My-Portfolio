@@ -51,27 +51,30 @@ const Home = () => {
   return (
     <div
       id="home"
-      className="hero min-h-screen  px-16 bg-cover"
+      className="hero sm:px-16 bg-cover h-screen px-4 w-full"
       style={{
         backgroundImage:
           'url(https://images.ctfassets.net/em6l9zw4tzag/EqjXhOPnRiPWii1fwz2v8/f0c8c4fd8678c8d3aa941f58e3f71958/spectivus-hero.jpg)',
+        backgroundRepeat: 'repeat',
       }}>
-      <div className="hero-content flex-col lg:flex-row-reverse gap-2 p-0">
+      <div className="hero-content flex-col md:flex-row-reverse gap-2 p-0">
+        {/* image */}
         <img
           src={homeImage}
-          className=" max-w-lg md:max-w-md animate-[updown_3s_infinite] "
+          className=" md:w-72 w-56 mt-8 animate-[updown_3s_infinite] "
         />
+        {/* text content */}
         <div className="max-h-96">
           <p
             className="font-bold tracking-wide p-2 bg-primary 
-          inline-block rounded-lg mb-4 text-base-300 text-3xl">
+          inline-block rounded-lg mb-4 text-base-300 text-base sm:text-xl lg:text-3xl">
             Welcome to my Portfolio
           </p>
-          <h1 className="text-6xl font-bold">
+          <h1 className="font-bold text-3xl sm:text-4xl lg:text-5xl h-20 lg:h-32 lg:pt-3">
             {`Hi! I'm Sean, `} <br />
             <span className="wrap">{text}</span>
           </h1>
-          <p className="py-6">
+          <p className="pb-3 sm:pt-3 text-base max-w-lg">
             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
             excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
             a id nisi.

@@ -23,7 +23,7 @@ const Navbar = () => {
     <nav className="bg-base-200 flex justify-center px-16 bg-opacity-60 fixed w-full z-20">
       <div className="navbar align-item max-w-screen-xl">
         <div className="navbar-start ml-4">
-          <a href="#home" className="hidden lg:flex w-16 h-16 rounded-full">
+          <a href="#home" className="hidden md:flex  w-16 h-16 rounded-full">
             <img
               src={logo}
               alt="logo"
@@ -32,7 +32,7 @@ const Navbar = () => {
           </a>
           {/* DROPDOWN */}
           <div className="dropdown">
-            <label tabIndex={0} className="btn btn-ghost lg:hidden">
+            <label tabIndex={0} className="btn btn-ghost md:hidden">
               <FaBarsStaggered className="h-6 w-6" />
             </label>
             <ul
@@ -43,7 +43,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="navbar-center hidden lg:flex">
+        <div className="navbar-center hidden md:flex">
           <ul className="menu menu-horizontal">
             <NavLinks activeLink={activeLink} setActiveLink={setActiveLink} />
           </ul>

@@ -31,9 +31,16 @@ const Contact = () => {
       id="contact"
       className="bg-gradient-to-r from-fuchsia-800 via-purple-600 to-violet-800 py-16">
       <SectionTitle text="Let's chat" />
-      <div className="grid grid-cols-2 justify-center items-center ">
-        <img src={contactImage} alt="contact image" className="max-w-md m-16" />
-        <form ref={form} onSubmit={sendEmail} className="flex flex-col m-16">
+      <div className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center mx-12 sm:mx-6">
+        <img
+          src={contactImage}
+          alt="contact image"
+          className=" hidden sm:flex"
+        />
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          className="flex flex-col m-6 mt-12">
           <input
             type="text"
             placeholder="Name"
