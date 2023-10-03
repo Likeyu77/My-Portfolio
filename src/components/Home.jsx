@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { FaGithubSquare, FaLinkedin, FaLocationArrow } from 'react-icons/fa'
-import DynamicParticles from './dynamicParticles'
+import DynamicParticles from './DynamicParticles'
 
 const Home = () => {
   const [loopNum, setLoopNum] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
   const toRotate = [
     'Front-End Developer',
-    'Full-Stack Developer',
+    // 'Full-Stack Developer',
     // 'App Developer',
   ]
   const [text, setText] = useState('')
