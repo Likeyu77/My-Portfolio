@@ -4,20 +4,20 @@ import { FaBarsStaggered } from 'react-icons/fa6'
 import NavLinks from './NavLinks'
 import { useState, useEffect } from 'react'
 
-const themes = { synthwave: 'synthwave', winter: 'winter' }
+// const themes = { synthwave: 'synthwave', corporate: 'corporate' }
 const Navbar = () => {
-  const [theme, setTheme] = useState(themes.synthwave)
+  // const [theme, setTheme] = useState(themes.synthwave)
   const [activeLink, setActiveLink] = useState('home')
 
-  const handleTheme = () => {
-    const { synthwave, winter } = themes
-    const newTheme = theme === synthwave ? winter : synthwave
-    setTheme(newTheme)
-  }
+  // const handleTheme = () => {
+  //   const { synthwave, corporate } = themes
+  //   const newTheme = theme === synthwave ? corporate : synthwave
+  //   setTheme(newTheme)
+  // }
 
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme)
-  }, [theme])
+  // useEffect(() => {
+  //   document.documentElement.setAttribute('data-theme', theme)
+  // }, [theme])
 
   return (
     <nav className="bg-base-200 flex justify-center px-16 bg-opacity-60 fixed w-full z-20">
@@ -50,14 +50,13 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-end">
-          {/* set theme */}
-          <label className="swap swap-rotate">
+          {/* <label className="swap swap-rotate">
             <input type="checkbox" onChange={() => handleTheme()} />
-            {/* moon icon*/}
+
             <BsMoonFill className="swap-off h-4 w-4" />
 
             <BsSunFill className="swap-on h-4 w-4" />
-          </label>
+          </label> */}
         </div>
       </div>
     </nav>

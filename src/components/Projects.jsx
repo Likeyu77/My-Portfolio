@@ -5,13 +5,17 @@ import CategoryButtons from './CategoryButtons'
 import ProjectsContainer from './ProjectsContainer'
 
 const Projects = () => {
-  const categories = ['Front-End', 'Full-Stack', 'App', 'All']
+  const allCategories = projects.map((project) => {
+    return project.category
+  })
+
+  const uniqueCategory = ['All', ...new Set(allCategories)]
   const [activeCategory, setActiveCategory] = useState('All')
   return (
     <section className="py-20  bg-base-200 " id="projects">
       <SectionTitle text="Personal Projects" />
       <CategoryButtons
-        categories={categories}
+        categories={uniqueCategory}
         activeCategory={activeCategory}
         setActiveCategory={setActiveCategory}
       />

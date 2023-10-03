@@ -1,8 +1,9 @@
 import React from 'react'
-
+import { projects } from '../data'
+// grid grid-cols-3 sm:grid-cols-4 mt-6
 const CategoryButtons = ({ categories, activeCategory, setActiveCategory }) => {
   return (
-    <div className="grid grid-cols-3 sm:grid-cols-4 mt-6">
+    <div className="w-full px-4  grid grid-cols-2 sm:flex sm:flex-row sm:justify-center mt-6">
       {categories.map((category, index) => {
         return (
           <button

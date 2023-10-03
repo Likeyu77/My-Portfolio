@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react'
-import { FaGithubSquare, FaLinkedin } from 'react-icons/fa'
-import homeImage from '../assets/header-img.svg'
-// import bg from '../assets/banner-bg.png'
+import { FaGithubSquare, FaLinkedin, FaLocationArrow } from 'react-icons/fa'
+import DynamicParticles from './dynamicParticles'
+
 const Home = () => {
   const [loopNum, setLoopNum] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
   const toRotate = [
     'Front-End Developer',
     'Full-Stack Developer',
-    'App Developer',
+    // 'App Developer',
   ]
   const [text, setText] = useState('')
   const [delta, setDelta] = useState(300 - Math.random() * 100)
@@ -54,31 +54,31 @@ const Home = () => {
       className="hero sm:px-16 bg-cover h-screen px-4 w-full"
       style={{
         backgroundImage:
-          'url(https://images.ctfassets.net/em6l9zw4tzag/EqjXhOPnRiPWii1fwz2v8/f0c8c4fd8678c8d3aa941f58e3f71958/spectivus-hero.jpg)',
+          'url(https://images.pexels.com/photos/1539225/pexels-photo-1539225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)',
         backgroundRepeat: 'repeat',
       }}>
-      <div className="hero-content flex-col md:flex-row-reverse gap-2 p-0">
+      <div className="hero-content flex flex-row justify-center w-full">
         {/* image */}
-        <img
-          src={homeImage}
-          className=" md:w-72 w-56 mt-8 animate-[updown_3s_infinite] "
-        />
+
+        <DynamicParticles />
+
         {/* text content */}
-        <div className="max-h-96">
-          <p
+        <div className="flex flex-col sm:w-2/3 items-center">
+          {/* <p
             className="font-bold tracking-wide p-2 bg-primary 
           inline-block rounded-lg mb-4 text-base-300 text-base sm:text-xl lg:text-3xl">
             Welcome to my Portfolio
-          </p>
-          <h1 className="font-bold text-3xl sm:text-4xl lg:text-5xl h-20 lg:h-32 lg:pt-3">
-            {`Hi! I'm Sean, `} <br />
-            <span className="wrap">{text}</span>
+          </p> */}
+          <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl h-16 sm:h-20 lg:pt-3">
+            {`Hi! I'm Sean Li, `}
           </h1>
-          <p className="pb-3 sm:pt-3 text-base max-w-lg">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
-          </p>
+          <h2 className="font-bold text-3xl sm:text-4xl lg:text-5xl h-16">
+            <span className="wrap">{text}</span>
+          </h2>
+          <div className="pb-3 sm:pt-3 text-xl max-w-lg flex flex-row">
+            <FaLocationArrow className="mr-4" />
+            <p>Brisbane, QLD</p>
+          </div>
           <div className="flex mb-6">
             <a
               href="https://github.com/Likeyu77?tab=repositories"

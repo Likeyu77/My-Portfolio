@@ -17,7 +17,7 @@ export default {
   },
   plugins: [require('@tailwindcss/typography'), require('daisyui')],
   daisyui: {
-    themes: ["synthwave", "winter"]
+    themes: ["synthwave", "corporate"]
   },
 }
 

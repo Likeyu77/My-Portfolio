@@ -5,7 +5,7 @@ const ProjectCard = ({ project }) => {
   return (
     <div className="card w-64 sm:w-72 bg-base-100 shadow-xl m-4 justify-self-auto hover:scale-105 duration-300">
       <figure className="p-4 relative group">
-        <img src={img} alt="Shoes" className="rounded-xl h-64 w-64" />
+        {img}
 
         <div
           className="absolute h-64 w-56 sm:w-64 bg-gray-400 opacity-0 rounded-xl z-10 

@@ -1,5 +1,5 @@
 import { nanoid } from 'nanoid'
-// import { FaHtml5, FaJs, FaReact } from 'react-icons/fa'
+
 import {
   css,
   codeigniter,
@@ -13,6 +13,9 @@ import {
   react,
   redux,
   swift,
+  Homefurni,
+  Homefurni_V2,
+  Jobnote,
 } from './assets/Index'
 
 export const links = [
@@ -48,16 +51,16 @@ export const skills = [
     title: 'Redux',
     icon: <img src={redux} alt="redux" className="w-10 h-10" />,
   },
-  {
-    id: nanoid(),
-    title: 'MongoDB',
-    icon: <img src={mongodb} alt="mongodb" className="w-10 h-10" />,
-  },
-  {
-    id: nanoid(),
-    title: 'Node Js',
-    icon: <img src={nodejs} alt="nodejs" className="w-10 h-10" />,
-  },
+  // {
+  //   id: nanoid(),
+  //   title: 'MongoDB',
+  //   icon: <img src={mongodb} alt="mongodb" className="w-10 h-10" />,
+  // },
+  // {
+  //   id: nanoid(),
+  //   title: 'Node Js',
+  //   icon: <img src={nodejs} alt="nodejs" className="w-10 h-10" />,
+  // },
   {
     id: nanoid(),
     title: 'MySql',
@@ -75,8 +78,8 @@ export const skills = [
   },
   {
     id: nanoid(),
-    title: 'Swift',
-    icon: <img src={swift} alt="swift" className="w-10 h-10" />,
+    title: 'Git',
+    icon: <img src={git} alt="git" className="w-10 h-10" />,
   },
 ]
 
@@ -87,43 +90,45 @@ export const experiences = [
     title: 'Master of Information Technology',
     company: 'The University of Queensland',
     jobContent:
-      'Using C#(Object-Oriented Programming) and Unity 2D platform; collaborating with team to do test and debug; code comprehension and resuable, working within real world.',
+      'Web development; collaborating with team to develop web application, test and debug; code comprehension and resuable.',
   },
   {
     id: nanoid(),
-    time: 'July 2021 - July 2023',
-    title: 'Master of Information Technology',
+    time: 'July 2018 - July 2021',
+    title: 'Bachelor of Information System',
     company: 'The University of Queensland',
     jobContent:
-      'Using C#(Object-Oriented Programming) and Unity 2D platform; collaborating with team to do test and debug; code comprehension and resuable, working within real world.',
+      'Using tools like BPMN (Business Process Model and Notation) for visualizing and optimizing business processes, analyzing data to identify potential instances of fraud and deficiencies in organizational governance within the company.',
   },
 ]
 export const projects = [
   {
     id: nanoid(),
     category: 'Front-End',
-    img: 'https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=800',
-    url: 'https://react-projects.netlify.app/',
-    github: 'https://github.com/john-smilga',
-    title: 'first project',
-    text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.',
+    img: (
+      <img src={Homefurni_V2} alt="Shoes" className="rounded-xl h-64 w-64" />
+    ),
+    url: 'https://homefurni-v2.netlify.app',
+    github: 'https://github.com/Likeyu77/homefurni_V2',
+    title: 'HomeFurni_V2',
+    text: 'JavaScript, CSS, React, Styled-Component, Auth0, Stripe, React Router',
   },
   {
     id: nanoid(),
-    category: 'Full-Stack',
-    img: 'https://images.pexels.com/photos/2148222/pexels-photo-2148222.jpeg?auto=compress&cs=tinysrgb&w=800',
-    url: 'https://react-projects.netlify.app/',
-    github: 'https://github.com/john-smilga',
-    title: 'second project',
-    text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.',
+    category: 'Front-End',
+    img: <img src={Jobnote} alt="Shoes" className="rounded-xl h-64 w-64" />,
+    url: 'https://jobnote.netlify.app',
+    github: 'https://github.com/Likeyu77/JobNote',
+    title: 'JobNote',
+    text: 'JavaScript, CSS, React, Styled-Component, Redux, React Router',
   },
   {
     id: nanoid(),
-    category: 'App',
-    img: 'https://images.pexels.com/photos/12883026/pexels-photo-12883026.jpeg?auto=compress&cs=tinysrgb&w=800',
-    url: 'https://react-projects.netlify.app/',
-    github: 'https://github.com/john-smilga',
-    title: 'third project',
-    text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.',
+    category: 'Front-End',
+    img: <img src={Homefurni} alt="Shoes" className="rounded-xl h-64 w-64" />,
+    url: 'https://homefurni.netlify.app',
+    github: 'https://github.com/Likeyu77/HomeFurni',
+    title: 'HomeFurni',
+    text: 'JavaScript, React, Redux, React Router, TailwindCss, daisyUI',
   },
 ]
