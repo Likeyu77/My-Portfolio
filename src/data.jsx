@@ -54,8 +54,13 @@ export const skills = [
   },
   {
     id: nanoid(),
-    title: 'Java',
-    icon: <img src={java} alt="java" className="w-10 h-10" />,
+    title: 'Node Js',
+    icon: <img src={nodejs} alt="nodejs" className="w-10 h-10" />,
+  },
+  {
+    id: nanoid(),
+    title: 'MongoDB',
+    icon: <img src={mongodb} alt="mongodb" className="w-10 h-10" />,
   },
   {
     id: nanoid(),
@@ -67,7 +72,11 @@ export const skills = [
     title: 'Codeigniter',
     icon: <img src={codeigniter} alt="codeigniter" className="w-10 h-10" />,
   },
-
+  {
+    id: nanoid(),
+    title: 'Java',
+    icon: <img src={java} alt="java" className="w-10 h-10" />,
+  },
   {
     id: nanoid(),
     title: 'Python',
@@ -78,16 +87,6 @@ export const skills = [
     title: 'Git',
     icon: <img src={git} alt="git" className="w-10 h-10" />,
   },
-  // {
-  //   id: nanoid(),
-  //   title: 'MongoDB',
-  //   icon: <img src={mongodb} alt="mongodb" className="w-10 h-10" />,
-  // },
-  // {
-  //   id: nanoid(),
-  //   title: 'Node Js',
-  //   icon: <img src={nodejs} alt="nodejs" className="w-10 h-10" />,
-  // },
 ]
 
 export const experiences = [
