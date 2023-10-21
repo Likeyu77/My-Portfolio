@@ -74,6 +74,17 @@ export const skills = [
   },
   {
     id: nanoid(),
+    title: 'Express',
+    icon: (
+      <img
+        src="https://www.guayerd.com/wp-content/uploads/2021/04/expressjs-logo.svg"
+        alt="codeigniter"
+        className="w-10 h-10"
+      />
+    ),
+  },
+  {
+    id: nanoid(),
     title: 'Java',
     icon: <img src={java} alt="java" className="w-10 h-10" />,
   },

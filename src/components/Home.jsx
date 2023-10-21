@@ -6,8 +6,8 @@ const Home = () => {
   const [loopNum, setLoopNum] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
   const toRotate = [
+    'Full-Stack Developer',
     'Front-End Developer',
-    // 'Full-Stack Developer',
     // 'App Developer',
   ]
   const [text, setText] = useState('')
