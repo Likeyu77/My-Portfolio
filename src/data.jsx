@@ -17,6 +17,7 @@ import {
   Homefurni_V2,
   Jobnote,
   java,
+  Csharp,
 } from './assets/Index'
 
 export const links = [
@@ -56,6 +57,11 @@ export const skills = [
     id: nanoid(),
     title: 'Node Js',
     icon: <img src={nodejs} alt="nodejs" className="w-10 h-10" />,
+  },
+  {
+    id: nanoid(),
+    title: 'C#',
+    icon: <img src={Csharp} alt="Csharp" className="w-10 h-10" />,
   },
   {
     id: nanoid(),
