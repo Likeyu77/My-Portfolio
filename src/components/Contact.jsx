@@ -73,7 +73,7 @@ const Contact = () => {
           onSubmit={sendEmail}
           className="flex flex-col m-6 mt-4">
           {feedback && (
-            <p className="text-green-500 text-3xl my-4">{feedback}</p>
+            <p className="text-white-500 text-3xl my-4">{feedback}</p>
           )}
 
           <input
