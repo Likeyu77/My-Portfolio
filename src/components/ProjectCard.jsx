@@ -10,9 +10,14 @@ const ProjectCard = ({ project }) => {
         <div
           className="absolute h-64 w-56 sm:w-64 bg-gray-400 opacity-0 rounded-xl z-10 
         flex justify-around items-center group-hover:opacity-60">
-          <a href={url} target="_blank">
+          {url ? (
+            <a href={url} target="_blank">
+              <AiOutlineEye className="h-8 w-8 bg-black rounded-full hover:scale-125 duration-200" />
+            </a>
+          ) : null}
+          {/* <a href={url} target="_blank">
             <AiOutlineEye className="h-8 w-8 bg-black rounded-full hover:scale-125 duration-200" />
-          </a>
+          </a> */}
           <a href={github} target="_blank">
             <AiFillGithub className="h-8 w-8 bg-black rounded-full hover:scale-125 duration-200" />
           </a>

@@ -18,6 +18,8 @@ import {
   Jobnote,
   java,
   Csharp,
+  RecipeBlog,
+  wordpress,
 } from './assets/Index'
 
 export const links = [
@@ -104,9 +106,22 @@ export const skills = [
     title: 'Git',
     icon: <img src={git} alt="git" className="w-10 h-10" />,
   },
+  {
+    id: nanoid(),
+    title: 'Wordpress',
+    icon: <img src={wordpress} alt="wordpress" className="w-10 h-10" />,
+  },
 ]
 
 export const experiences = [
+  {
+    id: nanoid(),
+    time: 'Dec 2023 - Now',
+    title: 'Web Developer',
+    company: 'Quinlan Consulting Team · Internship',
+    jobContent:
+      "In this role, I actively participate in web development projects, collaborating with a team to maintain and create websites using Wordpress, HTML, CSS, and JavaScript. My responsibilities also involve conducting Data Analysis to assess website performance, offering feedback, and implementing SEO strategies in collaboration with the marketing team. I've received training on Digital Health Checks, empowering me to make informed decisions based on data analysis. I manage tracking codes, ensure responsive and mobile-friendly websites, and work with various content management systems.",
+  },
   {
     id: nanoid(),
     time: 'July 2021 - July 2023',
@@ -153,5 +168,20 @@ export const projects = [
     github: 'https://github.com/Likeyu77/HomeFurni',
     title: 'HomeFurni',
     text: 'JavaScript, React, Redux, React Router, TailwindCss, daisyUI',
+  },
+  {
+    id: nanoid(),
+    category: 'Back-End',
+    img: (
+      <img
+        src={RecipeBlog}
+        alt="Recipe Blog"
+        className="rounded-xl h-64 w-64"
+      />
+    ),
+    // url: 'https://homefurni.netlify.app',
+    github: 'https://github.com/Likeyu77/Recipe_Blog',
+    title: 'Recipe Blog',
+    text: 'Express, Node.JS, MongoDB',
   },
 ]
