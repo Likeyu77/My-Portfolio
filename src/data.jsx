@@ -147,16 +147,16 @@ export const experiences = [
     time: 'July 2021 - July 2023',
     title: 'Master of Information Technology',
     company: 'The University of Queensland',
-    jobContent: '',
-    //'Web development; collaborating with team to develop web application, test and debug; code comprehension and resuable.',
+    jobContent:
+      'Web development; collaborating with team to develop web application, test and debug; code comprehension and resuable.',
   },
   {
     id: nanoid(),
     time: 'July 2018 - July 2021',
     title: 'Bachelor of Information System',
     company: 'The University of Queensland',
-    jobContent: '',
-    //'Using tools like BPMN (Business Process Model and Notation) for visualizing and optimizing business processes, analyzing data to identify potential instances of fraud and deficiencies in organizational governance within the company.',
+    jobContent:
+      'Using tools like BPMN (Business Process Model and Notation) for visualizing and optimizing business processes, analyzing data to identify potential instances of fraud and deficiencies in organizational governance within the company.',
   },
 ]
 export const projects = [
