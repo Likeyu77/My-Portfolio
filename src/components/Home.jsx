@@ -6,7 +6,7 @@ const Home = () => {
   const [loopNum, setLoopNum] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
   const toRotate = [
-    'Full-Stack Developer',
+    'Support Engineer',
     'Front-End Developer',
     // 'App Developer',
   ]
@@ -77,7 +77,7 @@ const Home = () => {
           </h2>
           <div className="pb-3 sm:pt-3 text-xl max-w-lg flex flex-row">
             <FaLocationArrow className="mr-4" />
-            <p>Brisbane, QLD</p>
+            <p>Shanghai, CN</p>
           </div>
           <div className="flex mb-6">
             <a
